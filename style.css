@@ -26,6 +26,10 @@ body {
   --color-gray-07: #020617;
 }
 
+header {
+    margin-bottom: -16px;
+}
+
 header div img {
   display: flex;
   align-items: center;
@@ -74,5 +78,96 @@ main {
 }
 
 .tools {
-    display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 16px;
+  width: 608px;
+  height: 96px;
+
+  border-radius: 16px;
+  border: 1px solid var(--gray-04, #334155);
+  background: var(--gray-06, #0f172a);
+}
+
+.tools div {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.icons {
+  padding: 16px;
+
+  border-radius: 16px;
+  border: 1px solid var(--gray-05, #1e293b);
+  background: var(--gray-06, #0f172a);
+}
+
+i {
+  font-size: 32px;
+  color: var(--color-gray-03);
+}
+
+.tools div p {
+  color: var(--gray-02, #e2e8f0);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.arrow {
+  padding: 16px;
+}
+
+hr {
+  width: 1096px;
+  height: 1px;
+  background: #334155;
+}
+
+.prompt {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  width: 100%;
+}
+
+.prompt div {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  gap: 16px;
+
+  border-radius: 16px;
+  border: 1px solid var(--gray-04, #334155);
+  background: var(--gray-06, #0f172a);
+}
+
+.prompt div:first-child {
+    width: 100%;
+}
+
+button,
+input {
+  background-color: transparent;
+}
+
+input,
+input::placeholder {
+  color: var(--gray-02, #e2e8f0);
+  font-size: 18px;
+  font-weight: 400;
+  width: 100%;
+
+  outline: none;
+}
+
+.ph .ph-paper-plane-right:before {
+    color: red;
+}
+
+.tools, .prompt button, .ph-plus-circle {
+    cursor: pointer;
 }
